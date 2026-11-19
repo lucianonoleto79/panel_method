@@ -1,0 +1,7 @@
+== Cilindro com circulacao Gamma=4pi U R ==
+variacao de psi na superficie r=R: 8.9e-16 (esperado 0: e linha de corrente)
+max |V_r| na superficie: 6.7e-16 (esperado 0)
+Cl (integracao de pressao) = 12.566371;  Kutta-Joukowski Gamma/(U R) = 12.566371
+Cd = 3.1e-16 (paradoxo de d'Alembert)
+pontos de estagnacao: sin(theta) = -Gamma/(4 pi U R) = -1.0000 -> theta = 270.00 e 270.00 graus
+Figura: results/01_escoamentos_elementares/01f_cilindro_circulacao/cilindro_circulacao.png

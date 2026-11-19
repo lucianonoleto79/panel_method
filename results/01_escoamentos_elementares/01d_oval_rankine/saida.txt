@@ -1,0 +1,6 @@
+== Oval de Rankine: uniforme + fonte em (-a,0) + sumidouro em (+a,0) ==
+semicomprimento l = a sqrt(1 + m/(pi U a)) = 1.732051;  u(+-l, 0) = 2.2e-16
+semiespessura h = 1.306542;  psi(0, h) = 1.3e-15
+vazao liquida (fonte + sumidouro) = 0.0 -> corpo fechado
+circulacao em torno do corpo = 0.0e+00 (esperado 0)
+Figura: results/01_escoamentos_elementares/01d_oval_rankine/oval_rankine.png

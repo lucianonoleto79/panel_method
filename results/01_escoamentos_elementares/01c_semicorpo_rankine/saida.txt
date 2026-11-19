@@ -1,0 +1,7 @@
+== Semi-corpo de Rankine: uniforme U + fonte m na origem ==
+ponto de estagnacao x_s = -m/(2 pi U) = -1.000000;  V(x_s, 0) = (0.0e+00, 0.0e+00)
+psi no ponto de estagnacao = 3.141593 (linha do corpo: psi = m/2 = 3.141593)
+semiespessura em x =    10.0: 2.862773  (assintota m/(2U) = 3.141593)
+semiespessura em x =   100.0: 3.110498  (assintota m/(2U) = 3.141593)
+semiespessura em x =  1000.0: 3.138454  (assintota m/(2U) = 3.141593)
+Figura: results/01_escoamentos_elementares/01c_semicorpo_rankine/semicorpo_rankine.png

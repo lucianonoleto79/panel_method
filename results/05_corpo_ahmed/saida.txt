@@ -1,0 +1,53 @@
+== Corpo fechado (sem esteira) ==
+ rampa    Kutta  Cl livre  Cd livre   Cl solo   Cd solo
+    0°   nenhum    -0.000    -0.002    -0.407    -0.003
+    0°      top    -4.355     0.001  -161.717     0.009
+    0°   bottom     4.355     0.001     2.451    -0.000
+   25°   nenhum     0.006    -0.001    -0.350    -0.001
+   25°      top    -2.627     0.000   -57.984     0.001
+   25°   bottom     4.001     0.003     2.381     0.001
+   35°   nenhum     0.007    -0.000    -0.340    -0.001
+   35°      top    -1.868    -0.000   -33.705    -0.002
+   35°   bottom     3.895     0.005     2.364     0.002
+-> sem circulacao: forca nula fora do solo (d'Alembert) e succao para o solo
+   (Cl<0) com solo. Com Kutta em UMA aresta o Cl muda de sinal conforme a
+   aresta escolhida: o problema esta mal posto para um corpo de base rombuda.
+
+== Modelo de corpo equivalente (esteira fechada, Kutta na ponta), com solo ==
+ rampa  separacao  Lw (m)   Cl_eq  Cl_corpo  Cl livre  Cp_base
+  0.0°  slant_end   0.288   2.536     2.018     2.531   -0.525
+ 12.5°  slant_end   1.082   1.912     1.421     1.121    0.028
+ 20.0°  slant_end   0.583   1.988     1.690     1.490    0.124
+ 25.0°  slant_end   0.416   2.037     1.825     1.713    0.199
+ 30.0°  slant_end   0.307   2.082     1.935     1.922    0.282
+ 35.0°  roof_edge   0.288   2.373     1.859     2.092   -0.192
+ 40.0°  roof_edge   0.288   2.383     1.871     2.118   -0.204
+
+== Sensibilidade: rampa 25°, separacao no fim da rampa, com solo ==
+ Lw (m)  y_ponta (m)  Cl_corpo
+  0.150        0.000     2.195
+  0.150        0.050     0.996
+  0.150        0.100    -4.987
+  0.290        0.000     2.010
+  0.290        0.050     0.118
+  0.290        0.100    -6.652
+  0.416        0.000     1.826
+  0.416        0.050    -0.587
+  0.416        0.100    -7.641
+  0.600        0.000     1.575
+  0.600        0.050    -1.387
+  0.600        0.100    -8.669
+  1.000        0.000     1.684
+  1.000        0.050     1.812
+  1.000        0.100    -3.858
+
+Fator de Helmbold para AR = W/L = 0.373: 0.092
+Cl 3D 'grosseiro' (Cl_corpo 2D com solo x fator) — apenas ordem de grandeza:
+  rampa   0.0°:  0.186
+  rampa  12.5°:  0.131
+  rampa  20.0°:  0.156
+  rampa  25.0°:  0.169
+  rampa  30.0°:  0.179
+  rampa  35.0°:  0.172
+  rampa  40.0°:  0.173
+Figuras: results/05_corpo_ahmed/05_ahmed_campo.png results/05_corpo_ahmed/05_ahmed_cl.png

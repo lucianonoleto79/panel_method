@@ -1,0 +1,8 @@
+Panorama dos seis escoamentos elementares; detalhes nas subpastas:
+  01_escoamentos_elementares/01a_dipolo/
+  01_escoamentos_elementares/01b_vortice/
+  01_escoamentos_elementares/01c_semicorpo_rankine/
+  01_escoamentos_elementares/01d_oval_rankine/
+  01_escoamentos_elementares/01e_cilindro/
+  01_escoamentos_elementares/01f_cilindro_circulacao/
+Figura: results/01_escoamentos_elementares/panorama.png

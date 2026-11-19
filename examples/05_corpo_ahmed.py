@@ -6,10 +6,12 @@ Coeficientes por unidade de envergadura, referidos a q * L (L = comprimento).
 import numpy as np
 import matplotlib.pyplot as plt
 
-from _common import out
+from _common import out, rel, start
 from panelpy import Panels, solve
 from panelpy.ahmed import AHMED, ahmed_forces, ahmed_profile
 from panelpy.plotting import BLUE, ORANGE, GRAY, streamlines
+
+start("05_corpo_ahmed")
 
 N = 600
 L, H, hg = AHMED["L"], AHMED["H"], AHMED["clearance"]
@@ -114,4 +116,4 @@ axs[1].legend(fontsize=8)
 axs[1].set_title("Sensibilidade as hipoteses (rampa 25°, com solo)")
 fig.tight_layout()
 fig.savefig(out("05_ahmed_cl.png"), dpi=130)
-print("Figuras:", out("05_ahmed_campo.png"), out("05_ahmed_cl.png"))
+print("Figuras:", rel(out("05_ahmed_campo.png")), rel(out("05_ahmed_cl.png")))

@@ -11,10 +11,12 @@ sao lineares e so representam a realidade em angulos pequenos (regime colado).
 import numpy as np
 import matplotlib.pyplot as plt
 
-from _common import out
+from _common import out, rel, start
 from panelpy import Panels, rotate, solve
 from panelpy import analytic as an, geometry as geo
 from panelpy.plotting import BLUE, ORANGE, GRAY, cp_axes, streamlines
+
+start("04_aerofolios")
 
 ALPHA = np.radians(5.0)
 
@@ -116,4 +118,4 @@ streamlines(axs[1], s.velocity, (-0.5, 1.6), (-0.05, 0.6), body=p.polygon(), gro
 axs[1].set_title("NACA 4412, $\\alpha$=4$^\\circ$, h/c=0.15 (efeito solo)")
 fig.tight_layout()
 fig.savefig(out("04_aerofolios_campo.png"), dpi=130)
-print("Figuras:", out("04_aerofolios.png"), out("04_aerofolios_campo.png"))
+print("Figuras:", rel(out("04_aerofolios.png")), rel(out("04_aerofolios_campo.png")))

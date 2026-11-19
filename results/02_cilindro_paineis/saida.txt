@@ -6,4 +6,4 @@
    64     4.44e-15    7.5e-16      -3.6e-16        6.217594  6.56e-02
   128     7.55e-15    4.0e-16      -1.4e-16        6.249783  3.34e-02
   256     1.51e-14   -7.3e-17       1.4e-16        6.266330  1.69e-02
-Figura: /home/user/panel_method/results/02_cilindro.png
+Figura: results/02_cilindro_paineis/02_cilindro.png

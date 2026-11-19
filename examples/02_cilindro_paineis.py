@@ -3,10 +3,12 @@ com e sem circulacao imposta (cilindro girante / efeito Magnus)."""
 import numpy as np
 import matplotlib.pyplot as plt
 
-from _common import out
+from _common import out, rel, start
 from panelpy import Panels, solve
 from panelpy import analytic as an, geometry as geo
 from panelpy.plotting import BLUE, ORANGE, cp_axes, streamlines
+
+start("02_cilindro_paineis")
 
 R, U = 1.0, 1.0
 fig, axs = plt.subplots(1, 3, figsize=(16, 4.6))
@@ -52,4 +54,4 @@ streamlines(axs[2], s.velocity, (-3, 3), (-2, 2), body=p.polygon(), n=160)
 axs[2].set_title("Paineis: cilindro girante ($\\Gamma=2\\pi$)")
 fig.tight_layout()
 fig.savefig(out("02_cilindro.png"), dpi=130)
-print("Figura:", out("02_cilindro.png"))
+print("Figura:", rel(out("02_cilindro.png")))

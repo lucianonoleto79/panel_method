@@ -50,4 +50,4 @@ Cl 3D 'grosseiro' (Cl_corpo 2D com solo x fator) — apenas ordem de grandeza:
   rampa  30.0°:  0.179
   rampa  35.0°:  0.172
   rampa  40.0°:  0.173
-Figuras: /home/user/panel_method/results/05_ahmed_campo.png /home/user/panel_method/results/05_ahmed_cl.png
+Figuras: results/05_corpo_ahmed/05_ahmed_campo.png results/05_corpo_ahmed/05_ahmed_cl.png

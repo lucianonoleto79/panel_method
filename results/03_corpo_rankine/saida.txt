@@ -5,4 +5,4 @@
    64     1.93e-02    2.9e-16   -2.8e-16
   128     9.51e-03   -1.7e-16   -6.7e-16
   256     4.72e-03   -3.2e-17   -5.1e-16
-Figura: /home/user/panel_method/results/03_rankine.png
+Figura: results/03_corpo_rankine/03_rankine.png

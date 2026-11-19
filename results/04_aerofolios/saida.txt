@@ -30,4 +30,4 @@ h/c = 0.75: Cl = 0.9713   (fora do solo: 0.9928)
 h/c = 1.00: Cl = 0.9666   (fora do solo: 0.9928)
 h/c = 1.50: Cl = 0.9665   (fora do solo: 0.9928)
 h/c = 2.00: Cl = 0.9690   (fora do solo: 0.9928)
-Figuras: /home/user/panel_method/results/04_aerofolios.png /home/user/panel_method/results/04_aerofolios_campo.png
+Figuras: results/04_aerofolios/04_aerofolios.png results/04_aerofolios/04_aerofolios_campo.png

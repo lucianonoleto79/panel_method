@@ -4,10 +4,12 @@ circulacao (efeito Magnus)."""
 import numpy as np
 import matplotlib.pyplot as plt
 
-from _common import out
+from _common import out, rel, start
 from panelpy import analytic as an
 from panelpy.elementary import (Doublet, Source, Uniform, Vortex, cylinder_flow,
                                 rankine_flow)
+
+start("01_escoamentos_elementares")
 
 U = 1.0
 casos = [
@@ -61,4 +63,4 @@ for Gcw in (0.0, 2 * np.pi, 4 * np.pi):
     cl = -np.sum(cp * np.sin(th[:-1])) * dth / 2.0
     cd = -np.sum(cp * np.cos(th[:-1])) * dth / 2.0
     print(f"Cilindro Gamma={Gcw:6.3f}: Cl(pressao)={cl:.5f}  Cl(Kutta-Joukowski)={an.cylinder_cl(U,1,Gcw):.5f}  Cd={cd:.1e}")
-print("Figura:", out("01_elementares.png"))
+print("Figura:", rel(out("01_elementares.png")))

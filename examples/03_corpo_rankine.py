@@ -4,11 +4,13 @@ superposicao analitica fonte + sumidouro + uniforme."""
 import numpy as np
 import matplotlib.pyplot as plt
 
-from _common import out
+from _common import out, rel, start
 from panelpy import Panels, solve
 from panelpy import analytic as an, geometry as geo
 from panelpy.elementary import rankine_flow
 from panelpy.plotting import BLUE, ORANGE, cp_axes, streamlines
+
+start("03_corpo_rankine")
 
 U, m, a = 1.0, 2 * np.pi, 1.0
 l = an.rankine_half_length(U, m, a)
@@ -53,4 +55,4 @@ axs[2].plot([-a, a], [0, 0], "x", color="k", zorder=5)
 axs[2].set_title("Paineis (N=128); x = fonte/sumidouro analiticos")
 fig.tight_layout()
 fig.savefig(out("03_rankine.png"), dpi=130)
-print("Figura:", out("03_rankine.png"))
+print("Figura:", rel(out("03_rankine.png")))

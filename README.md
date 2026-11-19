@@ -26,7 +26,8 @@ python -m pytest tests -q
 for f in examples/0*.py; do python "$f"; done
 ```
 
-As figuras e tabelas são gravadas em `results/`.
+Cada exemplo grava suas figuras e sua saída numérica (`saida.txt`) em uma
+subpasta própria de `results/` (ver `results/README.md`).
 
 ```python
 import numpy as np
@@ -72,7 +73,7 @@ about arbitrary bodies*, Progress in Aerospace Sciences 8 (referência citada de
 
 ## Resultados de validação
 
-Números gerados pelos scripts (`results/*.txt`).
+Números gerados pelos scripts (`results/<caso>/saida.txt`).
 
 **Escoamentos elementares** (`01`): ψ = 0 na superfície do cilindro (erro 2e‑16);
 oval de Rankine (m = 2π, a = 1, U = 1) com semicomprimento l = 1,73205 e
@@ -80,19 +81,19 @@ semiespessura h = 1,30654; circulação do vórtice por integral de linha igual 
 exata; cilindro com circulação: Cl por pressão = Γ/(UR) (Kutta–Joukowski) e
 Cd ≈ 1e‑16.
 
-![elementares](results/01_elementares.png)
+![elementares](results/01_escoamentos_elementares/01_elementares.png)
 
 **Cilindro por painéis** (`02`): sem circulação, o Cp nos pontos de controle
 coincide com 1 − 4 sin²θ até a precisão de máquina (consequência da simetria do
 polígono regular). Com circulação imposta, o erro de Cl cai como O(1/N)
 (0,41 → 0,017 de N = 8 a 256).
 
-![cilindro](results/02_cilindro.png)
+![cilindro](results/02_cilindro_paineis/02_cilindro.png)
 
 **Oval de Rankine por painéis** (`03`): erro máximo de Cp de 8,8e‑2 (N = 16) a
 4,7e‑3 (N = 256), convergência ≈ O(1/N); Cd e Cl ~ 1e‑16.
 
-![rankine](results/03_rankine.png)
+![rankine](results/03_corpo_rankine/03_rankine.png)
 
 **Aerofólios** (`04`):
 
@@ -110,8 +111,8 @@ polígono regular). Com circulação imposta, o erro de Cl cai como O(1/N)
   h/c = 0,1; para h/c entre ~0,5 e 2 o Cl potencial fica ligeiramente *abaixo*
   do valor fora do solo e volta a ele lentamente (o vórtice-imagem decai com 1/h).
 
-![aerofolios](results/04_aerofolios.png)
-![campo](results/04_aerofolios_campo.png)
+![aerofolios](results/04_aerofolios/04_aerofolios.png)
+![campo](results/04_aerofolios/04_aerofolios_campo.png)
 
 ## Corpo de Ahmed (`05`) — leia as limitações
 
@@ -164,8 +165,8 @@ convergido com a malha):
 * O "arrasto" obtido com a hipótese de pressão de base é um subproduto do modelo
   e não deve ser comparado ao Cd experimental.
 
-![ahmed campo](results/05_ahmed_campo.png)
-![ahmed cl](results/05_ahmed_cl.png)
+![ahmed campo](results/05_corpo_ahmed/05_ahmed_campo.png)
+![ahmed cl](results/05_corpo_ahmed/05_ahmed_cl.png)
 
 ## Limitações gerais
 

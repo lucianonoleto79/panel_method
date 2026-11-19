@@ -81,7 +81,11 @@ semiespessura h = 1,30654; circulação do vórtice por integral de linha igual 
 exata; cilindro com circulação: Cl por pressão = Γ/(UR) (Kutta–Joukowski) e
 Cd ≈ 1e‑16.
 
-![elementares](results/01_escoamentos_elementares/01_elementares.png)
+Cada caso tem sua própria pasta em `results/01_escoamentos_elementares/`
+(`01a_dipolo`, `01b_vortice`, `01c_semicorpo_rankine`, `01d_oval_rankine`,
+`01e_cilindro`, `01f_cilindro_circulacao`), com figura e `saida.txt`.
+
+![elementares](results/01_escoamentos_elementares/panorama.png)
 
 **Cilindro por painéis** (`02`): sem circulação, o Cp nos pontos de controle
 coincide com 1 − 4 sin²θ até a precisão de máquina (consequência da simetria do

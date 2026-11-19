@@ -1,0 +1,9 @@
+== Vortice livre: V_theta = Gamma/(2 pi r) ==
+circulacao, circulo de raio 0.5 em torno do vortice: 6.283185 (esperado 6.283185)
+circulacao, circulo de raio 1.0 em torno do vortice: 6.283185 (esperado 6.283185)
+circulacao, circulo de raio 2.0 em torno do vortice: 6.283185 (esperado 6.283185)
+circulacao num circulo que NAO envolve o vortice: 8.9e-17 (esperado 0: escoamento irrotacional fora da singularidade)
+V_theta(r=0.5) = 2.000000  (esperado 2.000000)
+V_theta(r=1.0) = 1.000000  (esperado 1.000000)
+V_theta(r=2.0) = 0.500000  (esperado 0.500000)
+Figura: results/01_escoamentos_elementares/01b_vortice/vortice.png

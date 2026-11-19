@@ -1,0 +1,7 @@
+== Cilindro: uniforme + dipolo ==
+variacao de psi na superficie r=R: 4.4e-16 (esperado 0: e linha de corrente)
+max |V_r| na superficie: 3.9e-16 (esperado 0)
+Cl (integracao de pressao) = -0.000000;  Kutta-Joukowski Gamma/(U R) = 0.000000
+Cd = -1.8e-16 (paradoxo de d'Alembert)
+pontos de estagnacao: sin(theta) = -Gamma/(4 pi U R) = -0.0000 -> theta = 0.00 e 180.00 graus
+Figura: results/01_escoamentos_elementares/01e_cilindro/cilindro.png

@@ -1,0 +1,9 @@
+== Dipolo: phi = kappa cos(theta)/(2 pi r), psi = -kappa sin(theta)/(2 pi r) ==
+circulo de raio 0.5: psi = 1.000000 +- 3.0e-13  (esperado kappa/(4 pi c) = 1.000000)
+circulo de raio 1.0: psi = 0.500000 +- 1.5e-13  (esperado kappa/(4 pi c) = 0.500000)
+circulo de raio 2.0: psi = 0.250000 +- 7.5e-14  (esperado kappa/(4 pi c) = 0.250000)
+|V| em (r=1.0, 0) = 1.000000  (esperado kappa/(2 pi r^2) = 1.000000)
+|V| em (r=2.0, 0) = 0.250000  (esperado kappa/(2 pi r^2) = 0.250000)
+|V| em (r=4.0, 0) = 0.062500  (esperado kappa/(2 pi r^2) = 0.062500)
+circulacao em torno do dipolo = -3.6e-16 (esperado 0)
+Figura: results/01_escoamentos_elementares/01a_dipolo/dipolo.png

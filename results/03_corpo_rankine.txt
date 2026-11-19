@@ -1,0 +1,8 @@
+== Oval de Rankine: convergencia ==
+    N  erro max Cp         Cd         Cl
+   16     8.75e-02   -2.0e-17    8.8e-17
+   32     4.01e-02   -7.4e-17    7.6e-16
+   64     1.93e-02    2.9e-16   -2.8e-16
+  128     9.51e-03   -1.7e-16   -6.7e-16
+  256     4.72e-03   -3.2e-17   -5.1e-16
+Figura: /home/user/panel_method/results/03_rankine.png

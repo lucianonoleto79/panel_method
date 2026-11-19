@@ -1,0 +1,33 @@
+== Aerofolio de Karman-Trefftz (mx=0.1, my=0.1, tau=10 graus), alpha=5 graus ==
+Cl exato = 1.25137
+    N  Cl pressao   erro %    Cl K-J   erro %        Cd
+   50     1.18688    5.154   1.23466    1.335  -6.0e-03
+  100     1.21925    2.567   1.24438    0.559  -3.4e-03
+  200     1.23578    1.246   1.24861    0.220  -1.8e-03
+  400     1.24385    0.601   1.25032    0.084  -9.0e-04
+  800     1.24773    0.291   1.25097    0.032  -4.6e-04
+
+== Joukowski classico (bordo de fuga em cuspide, tau=0) ==
+N=  100  Cl=1.10038  Cl_KJ=1.17267  exato=1.21807
+N=  400  Cl=1.17449  Cl_KJ=1.20024  exato=1.21807
+N= 1600  Cl=1.20332  Cl_KJ=1.21194  exato=1.21807
+(a cuspide degrada a convergencia do Hess-Smith com paineis de intensidade constante)
+
+== NACA 4 digitos (N=200): Cl x alpha ==
+  perfil  dCl/da (1/rad)  a_L0 paineis  a_L0 aerof. fino
+    0012          6.8840        0.003°           -0.000°
+    2412          6.8718       -2.127°           -2.077°
+    4412          6.8592       -4.257°           -4.154°
+(teoria do aerofolio fino: dCl/da = 2 pi = 6.2832/rad)
+
+== NACA 4412, alpha=4 graus: efeito solo (altura do bordo de fuga h/c) ==
+h/c = 0.10: Cl = 1.1610   (fora do solo: 0.9928)
+h/c = 0.15: Cl = 1.1041   (fora do solo: 0.9928)
+h/c = 0.20: Cl = 1.0679   (fora do solo: 0.9928)
+h/c = 0.30: Cl = 1.0249   (fora do solo: 0.9928)
+h/c = 0.50: Cl = 0.9873   (fora do solo: 0.9928)
+h/c = 0.75: Cl = 0.9713   (fora do solo: 0.9928)
+h/c = 1.00: Cl = 0.9666   (fora do solo: 0.9928)
+h/c = 1.50: Cl = 0.9665   (fora do solo: 0.9928)
+h/c = 2.00: Cl = 0.9690   (fora do solo: 0.9928)
+Figuras: /home/user/panel_method/results/04_aerofolios.png /home/user/panel_method/results/04_aerofolios_campo.png

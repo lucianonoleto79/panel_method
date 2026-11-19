@@ -1,0 +1,8 @@
+== Verificacoes analiticas ==
+Cilindro: max |psi| na superficie r=R          = 2.22e-16 (esperado 0)
+Rankine: semi-comprimento l = 1.73205, semi-espessura h = 1.30654, u(l,0) = -2.2e-16
+Vortice: circulacao numerica = 6.283185 (esperado 6.283185)
+Cilindro Gamma= 0.000: Cl(pressao)=-0.00000  Cl(Kutta-Joukowski)=0.00000  Cd=9.3e-17
+Cilindro Gamma= 6.283: Cl(pressao)=6.28319  Cl(Kutta-Joukowski)=6.28319  Cd=1.9e-16
+Cilindro Gamma=12.566: Cl(pressao)=12.56637  Cl(Kutta-Joukowski)=12.56637  Cd=-2.2e-16
+Figura: /home/user/panel_method/results/01_elementares.png

@@ -1,0 +1,23 @@
+@page { size: A4; margin: 18mm 17mm 18mm 17mm; }
+body { font-family: "DejaVu Sans", "Liberation Sans", Arial, sans-serif; font-size: 10pt; line-height: 1.45;
+       color: #14232b; max-width: none; margin: 0; padding: 0; }
+header#title-block-header { border-bottom: 2px solid #1f6f8b; margin-bottom: 1.2em; padding-bottom: .6em; }
+h1.title { font-size: 19pt; margin: 0 0 .2em; color: #14232b; }
+p.subtitle { font-size: 11.5pt; color: #566a73; margin: 0; }
+h1 { font-size: 14pt; color: #1f6f8b; margin: 1.3em 0 .4em; border-bottom: 1px solid #cdd9de; padding-bottom: .15em;
+     break-after: avoid; }
+h2 { font-size: 11.5pt; margin: 1em 0 .3em; break-after: avoid; }
+p { margin: .45em 0; text-align: justify; hyphens: auto; }
+table { border-collapse: collapse; width: 100%; margin: .6em 0; font-size: 9pt; break-inside: avoid; }
+th, td { border-bottom: 1px solid #cdd9de; padding: 3px 6px; text-align: left; vertical-align: top; }
+th { background: #e8f1f4; }
+code { font-family: "DejaVu Sans Mono", monospace; font-size: 8.6pt; }
+pre { background: #f2f6f8; border: 1px solid #cdd9de; padding: 6px 8px; font-size: 8.3pt; white-space: pre-wrap;
+      break-inside: avoid; }
+blockquote { margin: .8em 0; padding: .5em .9em; background: #e8f1f4; border-left: 3px solid #1f6f8b; }
+blockquote p { margin: 0; }
+figure { margin: .8em 0; text-align: center; break-inside: avoid; }
+figure img { max-width: 100%; }
+figcaption { font-size: 8.6pt; color: #566a73; margin-top: .3em; }
+ul, ol { margin: .3em 0 .3em 1.2em; padding-left: .6em; }
+li { margin: .15em 0; }

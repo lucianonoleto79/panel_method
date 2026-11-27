@@ -20,3 +20,4 @@ for f in examples/0*.py; do python "$f"; done
 | `03_corpo_rankine/` | `examples/03_corpo_rankine.py` | Oval de Rankine por painéis × superposição analítica, convergência |
 | `04_aerofolios/` | `examples/04_aerofolios.py` | Kármán–Trefftz/Joukowski × solução exata, NACA Cl × α, efeito solo, linhas de corrente |
 | `05_corpo_ahmed/` | `examples/05_corpo_ahmed.py` | Corpo de Ahmed 2D: corpo fechado, modelo de esteira, sensibilidade, campo de escoamento |
+| `06_trabalho_cilindro/` | `trabalho_cilindro/comparar.py` | Trabalho de CFD: cilindro em Re = 100 — Cp médio de painéis, Cordel e fvm-cfd (malha O e malha uniforme), Cd/Cl(t) e espectro de Cl, vorticidade, estudo de malha do fvm-cfd, tabela em `saida.txt`. Requer as rodadas do Cordel e do fvm-cfd (ver `trabalho_cilindro/README.md`) |

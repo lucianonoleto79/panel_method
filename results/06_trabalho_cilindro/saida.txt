@@ -1,0 +1,31 @@
+== Escoamento potencial pelo metodo dos paineis ==
+N = 64: Cd = 5.86e-16, Cl = 4.76e-16 (d'Alembert); Cp estagnacao = 0.9904, Cp minimo = -2.9904 em 87.2 graus, Cp base = 0.9904
+
+== Re = 100: medias na metade final de cada rodada ==
+                                              Cordel (FEM)        fvm-cfd, malha O 128×128     fvm-cfd, uniforme D/25 + FI     painéis (potencial, N = 64)      literatura
+Cd medio                                             1.387                           1.338                           1.451                           0.000       1,33-1,35
+Cl medio                                           +0.0003                         -0.0042                         -0.0021                         +0.0000                
+Cl' RMS                                              0.243                           0.228                           0.258                               -                
+Cl' amplitude                                        0.344                           0.323                           0.366                               -                
+Cd' RMS                                             0.0071                          0.0063                          0.0078                               -                
+St                                                  0.1700                          0.1633                          0.1749                               -     0,164-0,165
+Cp estagnacao                                        1.135                           1.061                           1.218                           0.990                
+Cp minimo                                           -1.168                          -1.129                          -1.226                          -2.990                
+angulo do Cp min (graus)                                86                              83                              84                              87                
+Cp base (180 graus)                                 -0.696                          -0.705                          -0.728                           0.990                
+Cd de pressao (int. Cp)                              1.038                           0.987                           1.093                           0.000                
+custo Cordel (FEM): 16043 nós, 31852 triângulos, Δt ≈ 5.30e-04, 377012 passos
+custo fvm-cfd, malha O 128×128: 128x128 = 16384 volumes, Δt = 0.00508, 29525 passos, 17 min
+custo fvm-cfd, uniforme D/25 + FI: 550x350 = 192500 células, Δt = 0.01, 20001 passos, 109 min
+Literatura (Re = 100, citada de memoria -- confira): St = 0,164-0,165 (Williamson 1996), Cd = 1,33-1,35 (Park, Kwon & Choi 1998; Henderson 1995).
+
+== fvm-cfd: estudo de malha (Re = 100) ==
+       abordagem      malha  volumes      Cd  Cl amp      St       tempo
+         malha O    128x128    16384   1.339   0.323  0.1637     5.7 min
+         malha O    192x192    36864   1.335   0.323  0.1641    23.9 min
+         malha O    256x256    65536   1.334   0.323  0.1643    63.2 min
+   uniforme + FI     D/12.5    48125   1.456   0.344  0.1725     5.1 min
+   uniforme + FI       D/20   123200   1.398   0.315  0.1762    32.2 min
+   uniforme + FI       D/25   192500   1.451   0.366  0.1749   108.8 min
+
+Figuras: results\06_trabalho_cilindro\comparacao_cp.png, results\06_trabalho_cilindro\comparacao_forcas.png, results\06_trabalho_cilindro\comparacao_vorticidade.png

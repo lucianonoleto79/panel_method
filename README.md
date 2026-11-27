@@ -49,6 +49,7 @@ print(sol.forces())                          # cl, cd (~0), cm(c/4), cl_kj
 | `panelpy/geometry.py` | Círculo, oval de Rankine, NACA 4 dígitos, Joukowski/Kármán–Trefftz |
 | `panelpy/ahmed.py` | Perfil lateral 2D do corpo de Ahmed e modelo de "corpo equivalente" com esteira |
 | `examples/01..05` | Casos de validação e aplicações |
+| `trabalho_cilindro/` | Trabalho de disciplina: cilindro em Re = 100, painéis × Cordel × fvm-cfd (enunciado, gabarito, script de comparação) |
 | `tests/test_validacao.py` | 18 testes automáticos contra as soluções exatas |
 
 ## Formulação
@@ -171,6 +172,28 @@ convergido com a malha):
 
 ![ahmed campo](results/05_corpo_ahmed/05_ahmed_campo.png)
 ![ahmed cl](results/05_corpo_ahmed/05_ahmed_cl.png)
+
+## Trabalho de disciplina: cilindro em Re = 100 (`trabalho_cilindro/`)
+
+Enunciado de um trabalho de graduação que compara o escoamento potencial deste repositório
+com duas soluções de Navier–Stokes de outros repositórios, no cilindro em Re = 100
+(esteira de von Kármán): o [Cordel](https://github.com/lucianonoleto79/cordel) (elementos
+finitos, CBS) e o [fvm-cfd](https://github.com/lucianonoleto79/fvm-cfd) (volumes finitos,
+malha O e malha uniforme com fronteira imersa). Os painéis entram como referência invíscida
+(Cp = 1 − 4 sen²θ, Cd = 0).
+
+* [`trabalho_cilindro/enunciado.pdf`](trabalho_cilindro/enunciado.pdf): enunciado;
+  [`gabarito.md`](trabalho_cilindro/gabarito.md): resultados de referência;
+* `python trabalho_cilindro/comparar.py`: figuras e tabela em
+  [`results/06_trabalho_cilindro/`](results/06_trabalho_cilindro/), a partir das rodadas dos
+  outros dois repositórios (instruções em [`trabalho_cilindro/README.md`](trabalho_cilindro/README.md)).
+
+Resultado: Cd = 1,387 (Cordel), 1,338 (malha O) e 1,451 (malha uniforme), contra 1,33–1,35 na
+literatura; St = 0,170, 0,163 e 0,175 (literatura 0,164–0,165). As diferenças vêm sobretudo do
+bloqueio do domínio e da representação da parede. O Cp viscoso só segue o potencial até
+~20° do ponto de estagnação.
+
+![Cp na parede, Re = 100](results/06_trabalho_cilindro/comparacao_cp.png)
 
 ## Limitações gerais
 
